@@ -1,0 +1,4 @@
+require:
+  - wp-cli/browse-command.php
+@foursquare.test:
+  ssh: vagrant:foursquare.test:/var/www/html

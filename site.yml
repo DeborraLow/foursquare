@@ -1,0 +1,49 @@
+# encoding: utf-8
+# vim: ft=ruby expandtab shiftwidth=2 tabstop=2
+
+#
+# General Settings
+#
+wp_box: vccw-team/xenial64
+
+#
+# Virtual Machine Settings
+#
+memory: 2048
+cpus: 2
+
+#
+# Network Settings
+#
+hostname: foursquare.test
+ip: 10.0.0.11
+
+#
+# WordPress Settings
+#
+version: latest
+lang: ja
+title: フォースクエア
+
+#
+# WordPress Path
+#
+wp_siteurl: 'wordpress'  # Path to the WP_SITEURL like "wp"
+wp_home: ''     # Path to the WP_HOME like "wp"
+
+
+#
+# WordPress User
+#
+admin_user: admin
+admin_pass: k8VJTRjY
+admin_email: dany_yeremia@5star.co.jp
+
+
+#
+# PHP ini values
+#
+php_ini:
+  date.timezone: Asia/Tokyo
+
+synced_folder: public
