@@ -1,0 +1,100 @@
+#main-visual{
+	position: relative;
+	@include PC{
+		width: 980px;
+		margin: 0 auto;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../img/farm-bg.jpg");
+		background-position: center center;
+		background-size: cover;
+		opacity: 0.5;
+		z-index: -1;
+	}
+	.main-visual-wrapper{
+		box-sizing: border-box;
+		@include PC{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+		.logo{
+			@include PC{
+				width: 203px;
+			}
+			& > img{
+				@include PC{
+					width: 203px;
+					height: auto;
+				}
+			}
+		}
+		.news{
+			background-color: rgba(255,255,255,0.5);
+			box-sizing: border-box;
+			@include PC{
+				width: calc(100% - 203px - 30px);
+				padding: 15px;
+			}
+			.title{
+				& > span{
+					@include PC{
+						display: block;
+					}
+				}
+				.en{
+					@include PC{
+						font-size: 18px;
+						font-family: $fontSemiBold;
+					}
+				}
+				.ja{
+					@include PC{
+						font-size: 16px;
+						font-family: $fontSemiBold;
+						margin-top: 10px;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.content{
+				@include PC{
+					height: 300px;
+					overflow: scroll;
+				}
+				.item{
+					@include PC{
+						margin-bottom: 10px;
+						display: flex;
+						justify-content: space-between;
+					}
+					&:last-child{
+						@include PC{
+							margin-bottom: 0;
+						}
+					}
+					.time{
+						@include PC{
+							width: 100px;
+							font-size: 12px;
+						}
+					}
+					.txt{
+						@include PC{
+							width: calc(100% - 100px - 30px);
+							font-size: 14px;
+							line-height: 1.5;
+						}
+					}
+				}
+			}
+		}
+	}
+}

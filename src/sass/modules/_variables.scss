@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "GenYoMinJP-Bold";
+  src: url("../fonts/GenYoMinJP-Bold.ttf");
+}
+@font-face {
+  font-family: "GenYoMinJP-ExtraLight";
+  src: url("../fonts/GenYoMinJP-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "GenYoMinJP-Regular";
+  src: url("../fonts/GenYoMinJP-Regular.ttf");
+}
+@font-face {
+  font-family: "GenYoMinJP-SemiBold";
+  src: url("../fonts/GenYoMinJP-SemiBold.ttf");
+}
+$breakpoint : 767px;
+
+$red : #BD2026;
+$yellow : #FFCB2E;
+$blue : #005595;
+$purple : #4E2875;
+
+$fontBase : "GenYoMinJP-Regular", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontBold : "GenYoMinJP-Bold", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontSemiBold : "GenYoMinJP-SemiBold", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontExtraLight : "GenYoMinJP-ExtraLight", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;

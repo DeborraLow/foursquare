@@ -1,0 +1,19 @@
+/*
+ * media query
+**/
+@mixin PC() {
+  @media screen and (min-width:$breakpoint + 1) {
+    @content;
+  }
+}
+@mixin SP() {
+  @media screen and (max-width:$breakpoint) {
+    @content;
+  }
+}
+
+@mixin SPP() {
+  @media screen and (max-width: 374px) {
+    @content;
+  }
+}

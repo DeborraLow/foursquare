@@ -1,0 +1,67 @@
+#header{
+	@include PC{
+
+	}
+	.navigation-bar{
+		box-sizing: border-box;
+		@include PC{
+			width: 980px;
+			margin: 0 auto;
+			padding: 20px 0;
+		}
+		.nav-list{
+			font-size: 0;
+			@include PC{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			& > ul{
+				@include PC{
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+				}
+			}
+			.nav-item{
+				& > a{
+					& > img{
+						@include PC{
+							width: 209.5px;
+							height: auto;
+						}
+					}
+				}
+				.nav-item-menu{
+					@include PC{
+						font-size: 20px;
+						margin-right: 15px;
+					}
+					&:last-child{
+						@include PC{
+							margin-right: 0;
+						}
+					}
+					& > a{
+						@include PC{
+							transition: all 0.3s ease;
+						}
+
+						& > i{
+							@include PC{
+								font-size: 18px;
+								margin-right: 5px;
+							}
+						}
+						&:hover{
+							@include PC{
+								text-decoration: underline;
+								opacity: 0.5;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

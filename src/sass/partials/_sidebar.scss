@@ -1,0 +1,30 @@
+#sidebar{
+	@include PC{
+		width: 300px;
+	}
+	.verse{
+		color: $red;
+		box-sizing: border-box;
+		@include PC{
+			padding: 20px;
+		}
+		.content{
+			& > span{
+				display: block;
+				line-height: 1.5;
+			}
+			.txt{
+				font-family: $fontSemiBold;
+				@include PC{
+					font-size: 16px;
+				}
+			}
+			.from{
+				margin-top: 10px;
+				@include PC{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

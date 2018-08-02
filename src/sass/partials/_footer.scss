@@ -1,0 +1,88 @@
+#footer{
+	@include PC{
+		width: 980px;
+		margin: 0 auto;
+	}
+	.info{
+		background-color: rgba(238,238,238,0.5);
+		box-sizing: border-box;
+		@include PC{
+			padding: 25px;
+		}
+		.title{
+			font-family: $fontBold;
+			@include PC{
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+		}
+		.content{
+			display: flex;
+			justify-content: space-between;
+			.list{
+				@include PC{
+					width: 600px;
+					display: flex;
+					flex-wrap: wrap;
+
+				}
+				.item{
+					line-height: 1.5;
+					@include PC{
+						width: calc((100% - 50px) / 2);
+						margin-right: 50px;
+						margin-bottom: 10px;
+						font-size: 14px;
+					}
+					&:nth-of-type(2n){
+						@include PC{
+							margin-right: 0;
+						}
+					}
+				}
+			}
+			.sns{
+				@include PC{
+					font-size: 18px;
+					width: 300px;
+				}
+				.icon-list{
+					@include PC{
+						display: flex;
+						margin-top: 10px;
+					}
+					.icon{
+						box-sizing: border-box;
+						@include PC{
+							width: calc((100% - 80px) / 5);
+							margin-right: 10px;
+							// padding: 20px;
+						}
+						&:last-child{
+							@include PC{
+								margin-right: 0;
+							}
+						}
+						& > a{
+							& > i{
+								@include PC{
+									font-size: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright{
+		.txt{
+			box-sizing: border-box;
+			@include PC{
+				padding: 30px;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+	}
+}
