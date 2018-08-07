@@ -1,7 +1,7 @@
 #article{
 	@include PC{
 		width: 600px;
-		margin-top: 50px;
+		margin-top: 20px;
 		display: flex;
 	}
 	& > dl{
@@ -25,10 +25,16 @@
 			@include PC{
 				font-size: 14px;
 			}
+			@include SP{
+				font-size: 14px;
+			}
 		}
 		.date{
 			@include PC{
 				font-size: 12px;
+			}
+			@include SP{
+				font-size: 11px;
 			}
 		}
 		.author{
@@ -36,10 +42,30 @@
 			@include PC{
 				font-size: 14px;
 			}
+			@include SP{
+				font-size: 12px;
+			}
 		}
 		.img{
+			@include PC{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			@include SP{
+				margin-top: 15px;
+				margin-bottom: 10px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 			& > img{
-				width: 100%;
+				@include PC{
+					width: 100%;
+				}
+				@include SP{
+					width: auto;
+					height: 150px;
+				}
 			}
 		}
 
@@ -50,19 +76,21 @@
 		@include PC{
 			font-size: 12px;
 		}
-
+		@include SP{
+			font-size: 12px;
+		}
 		.read-more{
 			display: block;
 			font-family: $fontSemiBold;
 			background-color: rgba(78,40,117,0.3);
 			background-clip: padding-box;
-			border-radius: 5px;
+			padding: 5px;
+			margin-top: 15px;
+			transform: translate(0, -8px);
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
 			@include PC{
-				padding: 10px;
-				margin-top: 15px;
-				transform: translate(0, -8px);
-    			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
 				transition: all 0.3s ease;
+				border-radius: 5px;
 			}
 			&:hover{
 				@include PC{

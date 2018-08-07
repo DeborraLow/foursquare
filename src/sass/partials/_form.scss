@@ -1,0 +1,260 @@
+#contact{
+	@include PC{
+		width: 980px;
+		margin: 0 auto;
+	}
+	@include SP{
+		padding: 50px 20px 20px;
+		box-sizing: border-box;
+	}
+	.title{
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-family: $fontSemiBold;
+		text-align: center;
+		& > span{
+			display: block;
+		}
+		.en{
+			@include PC{
+				font-size: 20px;
+			}
+			@include SP{
+				font-size: 16px;
+			}
+		}
+		.ja{
+			margin-top: 10px;
+			@include PC{
+				font-size: 16px;
+			}
+			@include SP{
+				font-size: 14px;
+			}
+		}
+	}
+	.explain{
+		text-align: center;
+		margin-bottom: 30px;
+		@include PC{
+			font-size: 14px;
+		}
+		@include SP{
+			font-size: 12px;
+		}
+	}
+	form{
+		@include PC{
+			width: 900px;
+			font-size: 14px;
+			margin: 0 auto;
+		}
+		@include SP{
+			font-size: 12px;
+		}
+		.wpcf7-validation-errors{
+			border: 2px solid $red;
+			color: $red;
+			padding: 10px;
+			text-align: center;
+			line-height: 1.5;
+		}
+		.wpcf7-form-control-wrap {
+			position: static!important;
+		}
+		.wpcf7-not-valid-tip {
+			color: $red;
+			display: block;
+			position: absolute;
+			bottom: -18px;
+			@include PC{
+				font-size: 12px;
+				left: 11px;
+			}
+			@include SP{
+				font-size: 11px;
+			}
+			@include SPP{
+				font-size: 10px;
+			}
+		}
+		.name-wrapper{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			li{
+				width: calc((100% - 20px) / 2);
+			}
+		}
+		.input-wrapper{
+			position: relative;
+			margin-bottom: 25px;
+
+			.content-label{
+				top: 11px;
+				margin-top: 0;
+			}
+			.focus{
+				// left: 100%;
+				// margin-left: -10px;
+				// transition: left .3s ease-out, transform .3s ease, margin-left .3s ease;
+				// transform: translateX(-100%);
+				top: -10px!important;
+				transition: top .3s ease-out, font-size .3s ease-out;
+				@include PC{
+					font-size: 12px;
+				}
+				@include SP{
+					font-size: 11px;
+				}
+			}
+			.input-title{
+				top: 50%;
+				margin-top: -7px;
+			}
+			dt{
+				position: absolute;
+				left: 0;
+				height: 14px;
+				margin-left: 10px;
+				word-break: keep-all;
+				transition: top .3s ease-out, font-size .3s ease-out;
+				& > label{
+					opacity: 0.8;
+					width: 50px;
+				}
+			}
+			dd{
+				position: relative;
+				input{
+					width: 100%;
+					height: 30px;
+					padding: 0 10px;
+					border: none;
+					background-color: rgba(238,238,238,0.5);
+					border-bottom: 1px solid #ccc;
+				    box-sizing: border-box;
+					&:focus{
+						outline: none;
+					}
+				}
+				textarea{
+					width: 100%;
+					height: 100px;
+					padding: 10px;
+					box-sizing: border-box;
+					border: none;
+					border-bottom: 1px solid #ccc;
+					background-color: rgba(238,238,238,0.5);
+					overflow: scroll;
+					&:focus{
+						outline: none;
+					}
+				}
+			}
+		}
+		.asterisk{
+			color: $red;
+		}
+		.privacy-policy{
+			height: 200px;
+			overflow: auto;
+			margin: 30px auto;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			padding: 20px 20px 20px 10px;
+			@include PC{
+				width: 800px;
+			}
+			@include SP{
+
+			}
+			.privacy-policy-wp{
+				font-size: 12px;
+				line-height: 1.67;
+				.privacy-title{
+					font-family: $fontSemiBold;
+					display: block;
+					font-size: 14px;
+					margin-bottom: 0;
+					margin-top: 20px;
+				}
+				.privacy-bold{
+					font-family: $fontBold;
+					display : block;
+					font-size: 14px;
+				}
+			}
+		}
+		.privacy-check{
+			text-align: center;
+			@include PC{
+				font-size: 16px;
+			}
+			@include SP{
+				font-size: 14px;
+			}
+			label{
+				& > span{
+					position: relative;
+					&:after{
+						position: absolute;
+						content: "";
+						width: 18px;
+						height: 18px;
+						box-sizing: border-box;
+						border: 1px solid #000;
+						left: -18px;
+						top: 0;
+						pointer-events: none;
+					    transition: background 0.2s ease-in, content 0.3s ease-in;
+					}
+				}
+				& > input{
+					opacity: 0;
+					&:checked + span{
+						&:after{
+							content: "\2713";
+						    color: #000;
+						    background-color: #ccc;
+						    border: 1px solid #ccc;
+						}
+					}
+				}
+
+			}
+		}
+		.submit-wp{
+			font-family: $fontSemiBold;
+			@include PC{
+				width: 400px;
+				margin-top: 40px;
+				margin-bottom: 50px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@include SP{
+				margin-top: 20px;
+				margin-bottom: 25px;
+				font-size: 14px;
+			}
+			.submit-btn{
+				width: 100%;
+				border: 3px solid #eee;
+				box-sizing: border-box;
+				background-color: rgba(238,238,238,0.6);
+				&:focus{
+					outline: none;
+				}
+				@include PC{
+					font-size: 18px;
+					height: 50px;
+				}
+				@include SP{
+					font-size: 14px;
+					height: 40px;
+				}
+			}
+		}
+	}
+}

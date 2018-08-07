@@ -4,9 +4,14 @@
  */
 class RecentPost
 {
-	function __construct($numberPosts = 3, $category = 0)
+	function __construct($numberPosts = 3, $category = '', $postType = 'post')
 	{
-		$catID = get_cat_ID($category);
+		if ($category !== '') {
+			$catID = get_cat_ID($category);
+		}
+		else {
+			$catID = $category;
+		}
 		$this->args = [
 			'numberposts' => $numberPosts,
 			'offset' => 0,
@@ -16,7 +21,7 @@ class RecentPost
 			'order' => 'DESC',
 			'include' => '',
 			'exclude' => '',
-			'post_type' => 'post',
+			'post_type' => $postType,
 			'post_status' => 'publish',
 			'suppress_filters' => true
 		];

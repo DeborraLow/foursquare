@@ -1,6 +1,10 @@
 #header{
-	@include PC{
-
+	font-family: $hiragino;
+	@include SP{
+		position: fixed;
+		background-color: rgba(0,0,0,0.5);
+		width: 100%;
+		z-index: 2;
 	}
 	.navigation-bar{
 		box-sizing: border-box;
@@ -8,6 +12,9 @@
 			width: 980px;
 			margin: 0 auto;
 			padding: 20px 0;
+		}
+		@include SP{
+			padding: 20px;
 		}
 		.nav-list{
 			font-size: 0;
@@ -25,9 +32,17 @@
 			}
 			.nav-item{
 				& > a{
+					@include SP{
+						display: inline;
+					}
+
 					& > img{
 						@include PC{
 							width: 209.5px;
+							height: auto;
+						}
+						@include SP{
+							width: 104.75px;
 							height: auto;
 						}
 					}
@@ -46,7 +61,6 @@
 						@include PC{
 							transition: all 0.3s ease;
 						}
-
 						& > i{
 							@include PC{
 								font-size: 18px;
@@ -57,6 +71,106 @@
 							@include PC{
 								text-decoration: underline;
 								opacity: 0.5;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.menu-bar{
+			position: fixed;
+			top: 30px;
+			right: 20px;
+			.open{
+				@include SP{
+					background-color: transparent!important;
+				    transition: background-color .1s;
+				}
+				&:before, &:after{
+					@include SP{
+					}
+				}
+				&:before{
+					@include SP{
+						top: 0!important;
+					    transform: rotate(45deg);
+					    transition: transform 0.35s 0.35s ease;
+					}
+				}
+				&:after{
+					@include SP{
+						bottom: 0!important;
+					    transform: rotate(-45deg);
+						transition: transform 0.35s 0.35s ease;
+					}
+				}
+			}
+			.burger{
+				@include SP{
+					position: relative;
+					display: block;
+					width: 35px;
+					height: 3px;
+					border-radius: 10px;
+					background-color: #fff;
+					transition: transform 0.35s 0.35s ease;
+				}
+				&:before, &:after{
+					@include SP{
+						content: "";
+						position: absolute;
+						border-radius: 10px;
+						width: 35px;
+						height: 3px;
+						background-color: #fff;
+						transition: transform 0.35s 0s ease;
+					}
+				}
+				&:before{
+					@include SP{
+						top: 8px;
+					}
+				}
+				&:after{
+					@include SP{
+						bottom: 8px;
+					}
+				}
+			}
+
+			.burger-menu{
+				@include SP{
+					margin-top: 32px;
+					height: 0;
+					overflow: hidden;
+				}
+				.nav-circle-menu{
+					@include SP{
+						margin-bottom: 10px;
+					}
+					&:last-child{
+						@include SP{
+							margin-bottom: 0;
+						}
+					}
+					& > a{
+						@include SP{
+							background-color: $blue;
+							border-radius: 50%;
+							width: 35px;
+							height: 35px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+
+						}
+
+						& > i{
+							@include SP{
+								color: #fff;
+								text-align: center;
+								font-size: 18px;
 							}
 						}
 					}

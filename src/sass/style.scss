@@ -1,5 +1,6 @@
 @import 'modules/variables';
 @import 'modules/mixins';
+@import 'reset';
 @import "body";
 @import "partials/header";
 @import "partials/main-visual";
@@ -8,3 +9,6 @@
 @import "partials/sidebar";
 @import "partials/article";
 @import "partials/footer";
+@import "partials/article-visual";
+@import "partials/single-article";
+@import "partials/form";

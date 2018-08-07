@@ -2,6 +2,11 @@
 	@include PC{
 		width: 300px;
 	}
+	@include SP{
+		box-sizing: border-box;
+		padding: 20px;
+		margin-top: 25px;
+	}
 	.verse{
 		color: $red;
 		box-sizing: border-box;
@@ -11,18 +16,29 @@
 		.content{
 			& > span{
 				display: block;
-				line-height: 1.5;
+				@include PC{
+					line-height: 1.5;
+				}
+				@include SP{
+					line-height: 2;
+				}
 			}
 			.txt{
 				font-family: $fontSemiBold;
 				@include PC{
 					font-size: 16px;
 				}
+				@include SP{
+					font-size: 12px;
+				}
 			}
 			.from{
 				margin-top: 10px;
 				@include PC{
 					font-size: 14px;
+				}
+				@include SP{
+					font-size: 11px;
 				}
 			}
 		}

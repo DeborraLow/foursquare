@@ -1,0 +1,37 @@
+#article-visual{
+	position: relative;
+	@include PC{
+		width: 980px;
+		height: 306px;
+		margin: 0 auto;
+	}
+	@include SP{
+		height: 153px;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../img/body-bg.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.6;
+		z-index: -1;
+	}
+	.logo{
+		& > a{
+			& > img{
+				@include PC{
+					height: 306px;
+				}
+				@include SP{
+					height: 153px;
+				}
+			}
+		}
+	}
+}

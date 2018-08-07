@@ -37,19 +37,20 @@
 		</div>
 	 </section>
 
-	 <section id="breadcrumbs">
-		<div class="content">
-			<span class="day">月曜日</span>
-			<span class="date">2018年8月1日</span>
-		</div>
-	 </section>
+	 <?php include "modules/breadcrumbs.php"; ?>
 
 	 <section id="main">
 		 <div id="article">
 			<?php foreach ($recentArticlesPosts as $recentArticlesPost) :?>
 				<dl>
 	    			<dt class="header">
-						<span class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/no-image.jpg" alt=""></span>
+						<span class="img">
+							<?php if(get_the_post_thumbnail($recentArticlesPost['ID'])): ?>
+								<?php echo get_the_post_thumbnail($recentArticlesPost['ID']); ?>
+							<?php else : ?>
+								<img src="<?php echo get_bloginfo('template_directory');?>/assets/img/no-image.jpg" alt="no-image">
+							<?php endif; ?>
+						</span>
 	    				<span class="title"><?php echo $recentArticlesPost['post_title']; ?></span>
 						<?php $fields = get_fields($recentArticlesPost['ID']); ?>
 	    				<span class="date"><?php echo substr($fields['date'],0,4) . '.' . substr($fields['date'],4,2) . '.' . substr($fields['date'],6,2) ; ?></span>
@@ -57,7 +58,7 @@
 	    			</dt>
 	    			<dd class="content">
 	    				<?php echo wp_trim_words( $recentArticlesPost['post_content'], 50, '...' ); ?>
-						<span class="read-more"><a href="">読む</a></span>
+						<span class="read-more"><a href="<?php echo get_bloginfo('url') . '/?p=' . $recentArticlesPost['ID']; ?>">読む</a></span>
 	    			</dd>
 	    		</dl>
 			<?php endforeach; ?>

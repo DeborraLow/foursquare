@@ -26,4 +26,5 @@
 	<div class="copyright">
 		<div class="txt">© 2018</div>
 	</div>
+	<?php wp_footer(); ?>
 </section>

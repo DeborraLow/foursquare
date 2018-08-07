@@ -61,13 +61,13 @@ c.height = h;
 
 //setting the width and height for canvas var partNum = (w * h) / 100000;
 
-var partNum = 50;
+var partNum = 30;
 //particle number - change it!
 
 var mouse = {
   x: w / 2,
   y: h / 2,
-  r: 50
+  r: 30
 };
 //mouse position
 var mouseY =0

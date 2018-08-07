@@ -1,0 +1,79 @@
+#single-article{
+	@include PC{
+		width: 600px;
+		margin-top: 20px;
+	}
+	@import '../editor-style';
+	.header{
+		line-height: 1.5;
+		@include PC{
+			margin-bottom: 20px;
+		}
+		& > span{
+			display: block;
+		}
+		.title{
+			font-family: $fontSemiBold;
+			@include PC{
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+			@include SP{
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+		}
+		.author{
+			@include PC{
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+			@include SP{
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+		}
+		.date{
+			@include PC{
+				font-size: 12px;
+				margin-bottom: 5px;
+			}
+			@include SP{
+				font-size: 12px;
+				margin-bottom: 5px;
+			}
+		}
+		.verse{
+			@include PC{
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+			@include SP{
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		& > img{
+			height: auto;
+			max-width: 100%;
+		}
+	}
+	.content{
+		line-height: 1.6;
+		@include PC{
+			font-size: 14px;
+			margin-bottom: 60px;
+		}
+		@include SP{
+			font-size: 12px;
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -14,5 +14,14 @@ body{
 	    left: 0;
 	    right: 0;
 	}
-
+	.pc{
+		@include SP{
+			display: none!important;
+		}
+	}
+	.sp{
+		@include PC{
+			display: none!important;
+		}
+	}
 }

@@ -4,20 +4,32 @@
 		width: 980px;
 		margin: 0 auto;
 	}
+	@include SP{
+		width: 100%;
+	}
 	.content{
 		box-sizing: border-box;
 		@include PC{
 			padding: 20px 15px;
+		}
+		@include SP{
+			padding: 10px 20px;
 		}
 		.day{
 			font-family: $fontBold;
 			@include PC{
 				font-size: 14px;
 			}
+			@include SP{
+				font-size: 12px;
+			}
 		}
 		.date{
 			@include PC{
 				font-size: 12px;
+			}
+			@include SP{
+				font-size: 11px;
 			}
 		}
 	}
