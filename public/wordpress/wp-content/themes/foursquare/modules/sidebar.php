@@ -16,5 +16,15 @@
 			<span class="en">ARCHIVES</span>
 			<span class="ja">アーカイブ</span>
 		</div>
+		<div class="archive-content">
+			<dl class="archive-file">
+				<dt class="year">2010</dt>
+				<dd class="month">
+					<ul>
+						<li><span></span><span>1</span></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
 	</div>
 </div>

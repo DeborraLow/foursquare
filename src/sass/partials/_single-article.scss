@@ -76,4 +76,30 @@
 			margin-bottom: 30px;
 		}
 	}
+	.navigation{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include PC{
+			font-size: 16px;
+		}
+		@include SP{
+			font-size: 12px;
+		}
+		.current{
+			color: $blue!important;
+			background-color: rgba(238,238,238,0.6)!important;
+		}
+		.page-numbers{
+			text-decoration: none;
+			color: #fff;
+			background-color: rgba(0,85,149,0.5);
+			padding: 10px;
+			box-sizing: border-box;
+			margin-right: 10px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
 }

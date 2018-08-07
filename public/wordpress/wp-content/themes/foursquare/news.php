@@ -1,7 +1,14 @@
 <?php
+	/*
+		Template Name: News Template
+	*/
 	include "classes/Recentpost.php";
+	include "classes/Archives.php";
 
-	$acfData = get_fields(get_the_ID());
+	$slug = get_post_field('post_name', get_post());
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	$archivePost = new Archives($slug,'post', 5, $paged);
+	$archive = $archivePost->getArchive();
 ?>
 
 <?php include "modules/head.php"; ?>
@@ -16,9 +23,10 @@
 		<?php include "modules/breadcrumbs.php"; ?>
 		<section id="main">
 			<div id="single-article">
-				<?php if (have_posts()) :?>
-	       			<?php while(have_posts()) :?>
-	         			<?php the_post(); ?>
+				<?php if ($archive->have_posts()) :?>
+	       			<?php while($archive->have_posts()) :?>
+	         			<?php $archive->the_post(); ?>
+						<?php $acfData = get_fields(get_the_ID()); ?>
 							<div class="header">
 								<span class="title"><?php the_title();?></span>
 								<span class="author"><?php echo $acfData['author']; ?></span>
@@ -33,9 +41,24 @@
 							</div>
 
 					<?php endwhile; ?>
+					<div class="navigation">
+						<?php
+							$total_pages = $archive->max_num_pages;
+							$current_page = max(1, get_query_var('paged'));
+
+							$arg = array(
+								'base' => get_pagenum_link(1) . '%_%',
+					            'format' => '/page/%#%',
+					            'current' => $current_page,
+					            'total' => $total_pages,
+								'prev_text' => '<',
+								'next_text' => '>',
+							);
+							echo paginate_links($arg);
+						?>
+					</div>
 				<?php endif; ?>
 			</div>
-
 			<?php wp_reset_postdata(); ?>
 		   <?php include "modules/sidebar.php"; ?>
 		</section>
