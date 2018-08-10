@@ -8,7 +8,12 @@
  <body>
  	<?php include "modules/header.php"; ?>
  	<canvas id="c"></canvas>
-
+	<div id="article-visual">
+		<div class="logo">
+			<a href="/"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/foursquare-logo.png" alt="フォースクエアロゴ"></a>
+		</div>
+	</div>
+	<?php include "modules/breadcrumbs.php"; ?>
 	<section id="main">
 		<section id="tabs-profile">
 			<ul class="tabs z-depth-1 tab-title">

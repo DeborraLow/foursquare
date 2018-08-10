@@ -4,14 +4,18 @@
 	}
 	@include SP{
 		box-sizing: border-box;
-		padding: 20px;
 		margin-top: 25px;
 	}
 	.verse{
 		// color: $purple;
 		box-sizing: border-box;
+		border: 2px solid #ccc;
+		padding: 20px;
+		border-radius: 15px;
 		@include PC{
 			padding: 20px;
+			border: 2px solid #ccc;
+			border-radius: 15px;
 		}
 		.content{
 			& > span{

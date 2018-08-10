@@ -1,0 +1,10 @@
+#schedule{
+	@include PC{
+		width: 600px;
+		margin: 0 auto;
+	}
+	@include SP{
+		padding: 50px 20px 20px;
+		box-sizing: border-box;
+	}
+}

@@ -11,7 +11,7 @@
 			</div>
 		<?php endforeach; ?>
 	</div>
-	<div class="schedule">
+	<div class="calendar-wrapper">
 		<div id='calendar'></div>
 	</div>
 	<?php
