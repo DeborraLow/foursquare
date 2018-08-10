@@ -2,7 +2,7 @@
 	/*
 		Template Name: Contact
 	*/
-	include "classes/Recentpost.php";
+	include "classes/Include.php";
  ?>
 <?php include "modules/head.php"; ?>
 <body>

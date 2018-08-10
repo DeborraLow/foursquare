@@ -33,5 +33,6 @@
 	   ?>
 	   <span class="day"><?php echo $dayJp; ?></span>
 	   <span class="date"><?php echo date_format($date, 'Y'); ?>年<?php echo date_format($date, 'm'); ?>月<?php echo date_format($date, 'd'); ?>日</span>
+	   <span class="moment-date-time"></span>
    </div>
 </section>

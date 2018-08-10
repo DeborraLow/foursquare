@@ -4,7 +4,7 @@
  */
 class RecentPost
 {
-	function __construct($numberPosts = 3, $category = '', $postType = 'post')
+	function __construct($numberPosts = -1, $category = '', $postType = 'post')
 	{
 		if ($category !== '') {
 			$catID = get_cat_ID($category);

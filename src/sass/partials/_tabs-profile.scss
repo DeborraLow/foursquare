@@ -1,0 +1,39 @@
+#tabs-profile{
+	@include PC{
+		width : 600px;
+		margin : 20px auto 20px;
+	}
+	@include SP{
+		padding: 50px 20px 20px;
+		box-sizing: border-box;
+	}
+	.tab-title{
+		@include PC{
+			font-size: 14px;
+		}
+		@include PC{
+			font-size: 13px;
+		}
+	}
+	.tab-content{
+		font-size: 12px;
+		line-height: 1.67;
+		box-sizing: border-box;
+		text-align: justify;
+		@include PC{
+			padding: 20px;
+		}
+	}
+	.tabs{
+		margin-bottom : 30px;
+		.tab{
+			& > a{
+				color : $blue;
+				border-color : $blue;
+			}
+		}
+		.indicator{
+			background-color : $blue;
+		}
+	}
+}

@@ -14,6 +14,23 @@
   font-family: "GenYoMinJP-SemiBold";
   src: url("../fonts/GenYoMinJP-SemiBold.ttf");
 }
+
+@font-face {
+  font-family: "Kazesawa-Bold";
+  src: url("../fonts/Kazesawa-Bold.ttf"), url("../fonts/Kazesawa-Bold.woff");
+}
+@font-face {
+  font-family: "Kazesawa-Light";
+  src: url("../fonts/Kazesawa-Light.ttf"), url("../fonts/Kazesawa-Light.woff");
+}
+@font-face {
+  font-family: "Kazesawa-Regular";
+  src: url("../fonts/Kazesawa-Regular.ttf"), url("../fonts/Kazesawa-Regular.woff");
+}
+@font-face {
+  font-family: "Kazesawa-SemiBold";
+  src: url("../fonts/Kazesawa-SemiBold.ttf"), url("../fonts/Kazesawa-SemiBold.woff");
+}
 $breakpoint : 767px;
 
 $red : #BD2026;
@@ -22,7 +39,7 @@ $blue : #005595;
 $purple : #4E2875;
 
 $hiragino : "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
-$fontBase : "GenYoMinJP-Regular", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
-$fontBold : "GenYoMinJP-Bold", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
-$fontSemiBold : "GenYoMinJP-SemiBold", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
-$fontExtraLight : "GenYoMinJP-ExtraLight", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontBase : "Kazesawa-Regular", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontBold : "Kazesawa-Bold", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontSemiBold : "Kazesawa-SemiBold", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;
+$fontExtraLight : "Kazesawa-Light", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic", Meiryo, sans-serif;

@@ -1,6 +1,5 @@
 <?php
-	include "classes/Recentpost.php";
-
+	include "classes/Include.php";
 	$recentArticles = new Recentpost(3,'article');
 	$recentArticlesPosts = $recentArticles->getRecentPost();
 

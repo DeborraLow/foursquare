@@ -1,0 +1,19 @@
+.fc-day-header{
+	padding: 10px!important;
+	box-sizing: border-box;
+}
+.fc-button-group{
+	& > button{
+		&:focus{
+			background: transparent!important;
+		}
+	}
+}
+
+.schedule{
+	margin-top: 30px;
+	border-top: 2px solid #eee;
+	padding-top: 15px;
+	box-sizing: border-box;
+
+}

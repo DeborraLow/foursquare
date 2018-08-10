@@ -2,8 +2,7 @@
 	/*
 		Template Name: Article Template
 	*/
-	include "classes/Recentpost.php";
-	include "classes/Archives.php";
+	include "classes/Include.php";
 
 	$slug = get_post_field('post_name', get_post());
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

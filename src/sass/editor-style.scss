@@ -48,3 +48,16 @@ a{
 		color: $purple;
 	}
 }
+blockquote{
+	&:before, &:after{
+		content: '"';
+		display: inline-block;
+		font-size: 14px;
+	}
+	&:before{
+		margin-left: 5px;
+	}
+	&:after{
+		margin-right: 5px;
+	}
+}

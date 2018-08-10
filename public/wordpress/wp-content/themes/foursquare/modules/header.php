@@ -7,7 +7,7 @@
 			<ul class="nav-item pc">
 				<li class="nav-item-menu"><a href="/"><i class="fas fa-home"></i>ホーム</a></li>
 				<li class="nav-item-menu"><a href="/profile"><i class="fas fa-users"></i>プロファイル</a></li>
-				<li class="nav-item-menu"><a href=""><i class="fas fa-clock"></i>スケジュール</a></li>
+				<li class="nav-item-menu"><a href="/schedule"><i class="fas fa-clock"></i>スケジュール</a></li>
 				<li class="nav-item-menu"><a href="/article"><i class="fas fa-pen-alt"></i>記事</a></li>
 				<li class="nav-item-menu"><a href="/news"><i class="fas fa-newspaper"></i>ニュース</a></li>
 				<li class="nav-item-menu"><a href="/contact"><i class="fas fa-phone"></i>コンタクト</a></li>
@@ -19,7 +19,7 @@
 			<ul class="burger-menu">
 				<li class="nav-circle-menu"><a href="/"><i class="fas fa-home"></i></a></li>
 				<li class="nav-circle-menu"><a href="/profile"><i class="fas fa-users"></i></a></li>
-				<li class="nav-circle-menu"><a href=""><i class="fas fa-clock"></i></a></li>
+				<li class="nav-circle-menu"><a href="/schedule"><i class="fas fa-clock"></i></a></li>
 				<li class="nav-circle-menu"><a href="/article"><i class="fas fa-pen-alt"></i></a></li>
 				<li class="nav-circle-menu"><a href="/news"><i class="fas fa-newspaper"></i></a></li>
 				<li class="nav-circle-menu"><a href="/contact"><i class="fas fa-phone"></i></a></li>

@@ -7,14 +7,19 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/materialize.min.css">
+		<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/fullcalendar.min.css">
 		<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/style.css">
 
 		<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
 		<!-- <script src="https://unpkg.com/headroom.js" charset="utf-8"></script> -->
 		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/jquery.js" charset="utf-8"></script>
+		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/moment.js" charset="utf-8"></script>
 		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/promise.js" charset="utf-8"></script>
 		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/velocity.js" charset="utf-8"></script>
+		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/materialize.min.js" charset="utf-8"></script>
+		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/fullcalendar.min.js" charset="utf-8"></script>
+		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/sweetalert2.min.js" charset="utf-8"></script>
 		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/common.js" charset="utf-8"></script>
 		<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/canvas.js" charset="utf-8"></script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
