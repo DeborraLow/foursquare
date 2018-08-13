@@ -17,13 +17,13 @@
 	<section id="main">
 		<section id="tabs-profile">
 			<ul class="tabs z-depth-1 tab-title">
-				<li class="tab"><a href="#test1">Test 1</a></li>
-				<li class="tab"><a class="active" href="#test2">Test 2</a></li>
-				<li class="tab"><a href="#test3">Test 3</a></li>
-				<li class="tab"><a href="#test4">Test 4</a></li>
-				<li class="tab"><a href="#test0">Test 5</a></li>
-				<li class="tab"><a href="#test6">Test 6</a></li>
-				<li class="tab"><a href="#test7">Test 7</a></li>
+				<li class="tab"><a href="#test1">2000年</a></li>
+				<li class="tab"><a class="active" href="#test2">2001年 - 2002年</a></li>
+				<li class="tab"><a href="#test3">2003年 - 2004年</a></li>
+				<li class="tab"><a href="#test4">2005年 - 2006年</a></li>
+				<li class="tab"><a href="#test0">2007年 - 2012年</a></li>
+				<li class="tab"><a href="#test6">2013年 - 2017年</a></li>
+				<li class="tab"><a href="#test7">2017年 - 現在</a></li>
 			</ul>
 
 			<div id="test1" class="col s12 tab-content">
