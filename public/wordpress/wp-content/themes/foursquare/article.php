@@ -4,7 +4,7 @@
 	*/
 	include "classes/Include.php";
 
-	$slug = get_post_field('post_name', get_post());
+	$slug = 'article';
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	$archivePost = new Archives($slug, 'post', 5, $paged);
 	$archive = $archivePost->getArchive();
