@@ -7,4 +7,61 @@
 		padding: 50px 20px 20px;
 		box-sizing: border-box;
 	}
+	.schedule-list{
+		.schedule-title{
+			font-family: $fontSemiBold;
+			@include PC{
+				font-size: 18px;
+				margin-bottom: 50px;
+			}
+			@include SP{
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+		}
+		.schedule-item{
+			.schedule-day{
+				font-size: 14px;
+				border-bottom: 2px solid $blue;
+				// border-top: 2px solid $blue;
+				box-sizing: border-box;
+				padding: 20px 0;
+				@include PC{
+					margin-bottom: 25px;
+				}
+				@include SP{
+					margin-bottom: 20px;
+				}
+			}
+			.schedule-content{
+				.schedule-content-item{
+					font-size: 12px;
+					display: flex;
+					justify-content: space-between;
+					align-items: stretch;
+					line-height: 1.5;
+					& > span{
+						width: calc(50% / 2);
+					}
+					.note{
+						width: calc(100% - 50% - 50px);
+					}
+					& > last-child{
+						@include PC{
+							margin-bottom: 25px;
+						}
+						@include SP{
+							margin-bottom: 20px;
+						}
+					}
+					@include PC{
+						margin-bottom: 15px;
+					}
+					@include SP{
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
 }

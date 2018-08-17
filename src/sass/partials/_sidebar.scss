@@ -1,13 +1,13 @@
 #sidebar{
+	box-sizing: border-box;
 	@include PC{
 		width: 300px;
+		padding: 0 20px;
 	}
 	@include SP{
-		box-sizing: border-box;
 		margin-top: 25px;
 	}
 	.verse{
-		// color: $purple;
 		box-sizing: border-box;
 		border: 2px solid #ccc;
 		padding: 20px;
